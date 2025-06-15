@@ -1,0 +1,21 @@
+name: Schedule workflow
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 5:00 AM Pakistan Time (UTC 0:00)
+
+jobs:
+  run-daily-task:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print time message
+        run: echo "This workflow ran on a schedule!"
+
+ 
+    
+
+
+      
+    
+      
